@@ -437,14 +437,18 @@ Header style
   }
   
   
-  @media (min-width: 640px) {
+  @media (min-width: 700px) {
+
+    img{
+        height: 400px;
+    }
 
     /**
      * REUSED STYLE
      */
   
     .container {
-      max-width: 640px;
+      /* max-width: 640px; */
       width: 100%;
       margin-inline: auto;
     }
@@ -455,26 +459,20 @@ Header style
      * HERO
      */
   
-    .hero .container { max-width: unset; }
+    /* .hero .container { max-width: unset; } */
   
-    .hero-form-wrapper {
-      max-width: 600px;
-      margin-inline: auto;
-      background-color: unset;
+    .container-footer{
+        max-width: 640px;
     }
   
-    .hero .form-tab,
-    .hero-form { background-color: var(--white); }
-  
-    .hero .form-tab {
-      max-width: max-content;
-      border-top-left-radius: var(--radius-16);
-      border-top-right-radius: var(--radius-16);
-    }
-  
-    .hero-form { border-top-right-radius: var(--radius-16); }
-  
-  
+  .about .container {
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .about-banner { margin-block-end: 0; }
 
     /**
      * FOOTER
